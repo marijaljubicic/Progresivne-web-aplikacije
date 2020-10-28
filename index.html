@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Menu Masters</title>
-    </head>
 
-    <body>
-        <h1>SMenu Masters</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Menu Masters</title>
+</head>
 
-    <script src="script.js"></script>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" alt="Logo" class="headerLogo">
+            <form class="search">
+                <input type="text" class="searchField" placeholder="Search recipes...">
+                <button class="btn searchBtn">
+                    <svg class="searchIcon">
+                        <use href="img/icons.svg#icon-magnifying-glass"></use>
+                    </svg>
+                    <span>Search</span>
+                </button>
+            </form>
+            <div class="likes">
+                <div class="likesField">
+                    <svg class="likesIcon">
+                        <use href="img/icons.svg#icon-heart"></use>
+                    </svg>
+                </div>
+                <div class="likesPanel">
+                    <ul class="likesList">
+
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="results">
+            <ul class="resultsList">
+            </ul>
+            <div class="resultsPages">
+            </div>
+        </div>
+
+        <div class="recipe">            
+        </div>
+
+        <div class="shopping">
+            <h2 class="heading2">My Shopping List</h2>
+            <ul class="shoppingList">
+            </ul>
+            <div class="copyright">
+                &copy; by Marija Ljubičić. Powered by
+            </div>
+        </div>
+    </div>
+
 </html>
