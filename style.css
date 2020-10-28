@@ -1,4 +1,95 @@
+
+
 body {
-	margin: 0;
-	padding: 0;
-}
+  font-family: 'Calibri', sans-serif;
+  font-weight: 350;
+  line-height: 2;
+  background-image: linear-gradient(to right bottom, #E26D86, #B3B4D2); }
+
+.container {
+  max-width: 80%;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 1px #706d6d;
+  display: grid;
+  grid-template-rows: 10rem minmax(100rem, auto);
+  grid-template-columns: 1.1fr 2fr 1.1fr;
+  grid-template-areas: "head head head" "list recipe shopping"; }
+
+
+.btn, .btn-small, .btn-small:link, .btn-small:visited {
+  background-color: #C18BBF;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+ }
+
+.btn {
+  padding: 1px 1px;
+  font-size: 20px; }
+  .btn svg {
+    height: 30px;
+    width: 30px;
+    fill: currentColor; }
+
+.heading2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #B3B4D2;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+   }
+
+.copyright {
+  color: #968B87;
+  font-size: 15pxrm;
+  margin-top: auto; }
+
+
+
+
+
+.header {
+  grid-area: head;
+  background-color: #f8f3f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .headerLogo {
+    margin-left: 50px;
+    height: 55px;
+    display: block; }
+
+.search {
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+   }
+
+.results,
+.likes {
+  padding: 30px 0; }
+  .resultsList,
+  .likesList {
+    list-style: none; }
+
+
+.recipe {
+  background-color: #f8f3f9;
+  border-top: 1px solid #fff; }
+
+
+.shopping {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column; }
+
+ 
