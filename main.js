@@ -1,4 +1,3 @@
-
 const searchForm = document.querySelector("form");
 const searchResultDiv = document.querySelector(".search-result");
 const container = document.querySelector(".container");
@@ -33,7 +32,17 @@ searchForm.addEventListener("submit", (e) => {
             <h1 class="title">${result.recipe.label}</h1>
             <a class="view-button" target="_blank" href="${result.recipe.url}">View Recipe</a>
           </div>
+		  <p class="item-data">Calories: ${result.recipe.calories.toFixed(2)}</p>
+		  <p class="item-data">Diet label: ${
+			result.recipe.dietLabels.length > 0
+			? result.recipe.dietLabels
+			: "No Data Found"}
+		  </p>
           <p class="item-data">Health labels: ${result.recipe.healthLabels}</p>
+		  <p class="item-data">Source: ${result.recipe.source}</p>
+		  <p class="item-data">Time: ${result.recipe.totalTime  > 0
+			? result.recipe.totalTime
+			: "No Data Found"}</p>
         </div>
       `;
     });
