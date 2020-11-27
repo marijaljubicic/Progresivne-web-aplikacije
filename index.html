@@ -13,9 +13,13 @@
         </header>
         <section>
             <div class="container">
-                <form>
-                    <input type="text" placeholder="Search Recipe ...">
-                    <ion-icon name="search-outline"></ion-icon>
+                <form class="search">
+                    <input type="text" class="search__field" placeholder="Search Recipe ...">
+					<button class="btn search__btn">
+							<ion-icon name="search-outline"></ion-icon>
+						<span>Search</span>
+					</button>
+                    <!--<ion-icon name="search-outline"></ion-icon>-->
                 </form>
                 <div class="search-result">
                     <!--<div class="item">
